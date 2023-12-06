@@ -1,0 +1,108 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Bebas Neue' , Times, serif;
+    background-image: url("../Images/Back-Rain-Pixeles.jpg");
+    transition: opacity 1s ease;
+  
+}
+
+
+.contenedor-principal{
+
+    text-align: center;
+    margin: 50px;
+
+}
+
+.titulo-principal{
+
+    display: inline-block;
+    font-size: 3.4rem;
+    background: #381b78;
+    padding: 2px 23px;
+    border-radius: 50px;
+    letter-spacing: 2px;
+
+}
+
+
+.subtitulo{
+
+    font-size: 1.9rem;
+    font-family: 'Bebas Neue', sans-serif;
+    animation: flashingTitulo 2s ease alternate infinite;
+    padding-top: 10px;
+
+}
+
+
+
+.contenedor-canales-recomendados{
+
+    display: flex;
+    background: #efeff1;
+    width: 16rem;
+    border-radius: 16px;
+    flex-direction: column;
+    grid-row-start: 1;
+    grid-row-end: 3;
+
+}
+
+.contenedor-canales-recomendados img {
+
+    padding: 3px 1px;
+
+}
+
+.titulo-canales{
+
+    font-size: 1.2rem;
+    text-align: center;
+    font-family: 'Press Start 2P';
+    line-height: 24px;
+    color: #20003f;
+}
+
+.contenedor-streams {
+    width: 91%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(344px, 1fr));
+    row-gap: 56px;
+    column-gap: 79px;
+    align-items: center;
+    justify-items: center;
+}
+
+
+#video-1, #video-2, #video-3, #video-4{
+    width: 400px;
+    height: 200px;
+    border: radius 25px; ;
+}
+
+
+@media (max-width: 759px){
+
+    body{
+        overflow-x: hidden;
+    }
+
+    .contenedor-streams {
+        width: 70%;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(268px, 1fr));
+        grid-gap: 50px;
+        align-items: center;
+        justify-items: center;
+        margin: 0 auto;
+    }
+    
+}
+
+
+
+
+
+/* color fondo div canales recomendados => #efeff1*/

@@ -1,0 +1,115 @@
+body {
+    background-image: linear-gradient(to top, #e5b2ca 30%, #3f0677 70%);
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.contenedor-about-us {
+    display: flex;
+    width: 100%;
+    margin: 7rem 0 11rem 0;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+
+.info {
+    display: flex;
+    width: 300px;
+    flex-direction: column;
+    height: 500px;
+    border: white solid;
+    border-radius: 2%;
+    margin: 30px;
+    background: linear-gradient(#ecaaff, #571f83);
+    align-items: center;
+}
+
+.info:hover {
+
+    background: linear-gradient(#571f83, #ecaaff);
+
+}
+
+
+.info-img {
+    position: relative;
+    width: 250px;
+    box-sizing: border-box;
+    width: 100px;
+    top: -50px;
+    text-align: center;
+    display: flex;
+    color: #fff;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px #000000;
+    color: white;
+    text-shadow: 2px 2px black;
+    letter-spacing: 2px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info-texto {
+    width: 100%;
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 24px;
+    color: #fff;
+    margin-top: -77px;
+    text-shadow: 1px 1px 1px black,
+        1px 1px 5px black,
+        1px 1px 10px black,
+        1px 1px 15px black;
+
+}
+
+
+.info img {
+    width: 105px;
+    height: 110px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: #fff 3px solid;
+}
+
+.info-img h4 {
+    width: 200px;
+    margin-top: 10px;
+    height: 90px;
+    font-size: 1.9rem;
+    text-shadow: 1px 1px 1px black,
+        1px 1px 5px black,
+        1px 1px 10px black,
+        1px 1px 15px black;
+}
+
+.titulo-principal {
+    display: inline-block;
+    font-size: 3.4rem;
+    background: #e5b2ca;
+    padding: 2px 23px;
+    border-radius: 50px;
+    text-shadow: 2px 2px #000000;
+    color: white;
+    text-shadow: 2px 2px black;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 1px black,
+        1px 1px 5px black,
+        1px 1px 10px black,
+        1px 1px 15px black;
+}
+
+
+@media (max-width:576px) {
+    .titulo-principal {
+        display: inline-block;
+        font-size: 2rem;
+        background: #e5b2ca;
+        padding: 2px 23px;
+        border-radius: 50px;
+        text-shadow: 2px 2px #000000;
+        color: white;
+        text-shadow: 2px 2px black;
+    }
+}

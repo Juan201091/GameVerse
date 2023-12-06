@@ -1,0 +1,128 @@
+body {
+  background-image: linear-gradient(to top, #e5b2ca 0%, #47028e 100%);
+  font-family: "Bebas Neue", sans-serif;
+}
+
+/* color violeta oscuro para form #240046*/
+
+.contenedor-formulario {
+  width: 60%;
+  height: 100vh;
+  margin: 0 auto;
+  position: relative;
+}
+
+.popup {
+  width: 200px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  transform: translate(
+    -50%,
+    -50%
+  ); /* Utiliza transform para centrar el pop-up */
+  margin: auto;
+  background-color: rgb(233, 229, 237);
+  z-index: 10;
+  visibility: hidden;
+  border: 2px solid black;
+}
+.formulario {
+  background-color: rgb(26, 23, 23);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 50px auto;
+  overflow: hidden;
+}
+
+.formulario h1 {
+  font-family: "Press Start 2P";
+  font-size: 1.2em;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 50px;
+  margin-top: 20px;
+}
+
+.formulario input {
+  font-size: 0.8em;
+  margin: 10px 10px;
+  padding: 10px;
+  background-color: transparent;
+  border: none;
+  height: 50px;
+  box-sizing: border-box;
+  font-family: "Press Start 2P";
+}
+
+.formulario textarea {
+  color: #fff;
+  padding: 10px;
+  margin: 10px 10px;
+  font-size: 0.8em;
+  background-color: transparent;
+  height: 100px;
+  resize: none;
+  box-sizing: border-box;
+  font-family: "Press Start 2P";
+}
+
+textarea:focus {
+  background-color: #555;
+  outline: none;
+  border-bottom: 2px solid #e5b2ca;
+}
+
+textarea:focus::placeholder {
+  color: #fff;
+}
+
+#enviar {
+  border-radius: 10px;
+  background-color: #6b07ce;
+  margin: 10px auto;
+  font-size: 0.8em;
+  padding: 15px;
+  font-weight: 400;
+  transition: all;
+  color: #fff;
+}
+
+#enviar:hover {
+  background-color: #3d0278;
+  color: #ddd;
+}
+
+@media screen and (max-width: 965px) {
+  .formulario h1 {
+    font-size: 0.9em;
+  }
+
+  .formulario input {
+    font-size: 0.8em;
+    margin: 10px 10px;
+    padding: 10px;
+    background-color: transparent;
+    border: none;
+    height: 50px;
+    box-sizing: border-box;
+    font-family: "Press Start 2P";
+  }
+
+  .formulario input {
+    font-size: 0.7em;
+  }
+
+  .formulario textarea {
+    font-size: 0.7em;
+  }
+
+  #enviar {
+    font-size: 0.6em;
+  }
+}

@@ -1,0 +1,464 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Bebas Neue', sans-serif;
+    background-image: url("../Images/Back-Rain-Pixeles.jpg");
+    transition: opacity 1s ease;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/*-------------Variables-------------*/
+a {
+    --enlaces--: #add;
+}
+
+h1 {
+    --titulo_principal--: #fff;
+    --titulo_catalogo--: #ff4aab;
+}
+
+h2 {
+    --subtitulo_catalogo--: #5654d3;
+}
+
+:hover {
+    --hover_enlaces--: #5654d3;
+    ;
+}
+
+/*-------------------Header--------------------*/
+
+.navbar-responsive {
+    display: none;
+}
+
+.contenedor-navBar {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 15px;
+}
+
+.contenedor-links {
+    width: 42%;
+    display: flex;
+    padding: 0;
+    justify-content: center;
+}
+
+.contenedor-img {
+    width: 16%;
+
+}
+
+.contenedor-img .logo {
+    width: 100%;
+
+}
+
+.contenedor-registro {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    justify-content: center;
+    width: 42%;
+}
+
+.contenedor-links-ul-li,
+.contenedor-registro-ul-li {
+    list-style: none;
+}
+
+.contenedor-links-ul-li-a,
+.contenedor-registro-ul-li-a {
+    padding: 15px;
+    text-decoration: none;
+    color: var(--enlaces--);
+    font-size: 1.2em;
+    transition: background 1s;
+}
+
+.contenedor-links-ul-li-a:hover {
+    background: var(--hover_enlaces--);
+    outline: none;
+    border: none
+}
+
+.contenedor-registro-ul-li-a:hover {
+    background: var(--hover_enlaces--);
+    outline: none;
+    border: none
+}
+
+/*----------Section-Contenido-general----------------*/
+
+.contenido-general {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.conteendor-banner {
+    width: 50%;
+}
+
+.banner1 {
+    width: 100%;
+}
+
+.nuevo {
+    margin: 30px 0px;
+}
+
+.titulo-principal {
+    line-height: 1.5;
+    text-align: center;
+    font-size: 3em;
+    color: var(--titulo_principal--);
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+
+/*------------Section-Contenido-Catalogo--------------*/
+
+.contenido-catalogo {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    margin: 100px 0px;
+}
+
+.titulo-catalogo {
+    font-family: 'Press Start 2P', cursive;
+    color: var(--titulo_catalogo--);
+    font-size: 2.5em;
+    margin-bottom: 100px;
+    position: relative;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: #5654d3;
+    padding: 10px 20px;
+    border-radius: 50px;
+}
+
+
+.subtitulo-contenedores {
+    font-family: 'Bebas Neue', sans-serif;
+    color: var(--subtitulo_catalogo--);
+    font-size: 2em;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 100px;
+    animation: flashingTitulo 2s ease alternate infinite;
+}
+
+
+
+.contenedor-estrenos,
+.contenedor-recomendados,
+.contenedor-ofertas {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+
+
+.contenedor-compra {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    width: 290px;
+    margin-bottom: 20px;
+}
+
+
+.portada {
+    width: 100%;
+}
+
+.btn-comprar {
+    padding: 15px;
+    font-size: 0.8rem;
+    font-family: 'Press Start 2P', cursive;
+    border: none;
+    transition: all 1s;
+    cursor: pointer;
+}
+
+.btn-comprar:hover {
+    font-size: 0.75rem;
+}
+
+.nombre-juego {
+    color: #fff;
+    font-size: 2rem;
+    padding: 10px;
+    margin-top: 15px;
+    text-shadow: 2px 2px deeppink;
+    -webkit-text-stroke: 0.5px black;
+    text-align: center;
+
+}
+
+.nombre {
+    font-size: 1rem;
+    line-height: 35px;
+    text-align: center;
+    font-family: 'Press Start 2P';
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 50px;
+    text-shadow:
+        0 0 7px #ff4aab,
+        0 0 8px #ff4aab,
+        0 0 10px #ff4aab,
+        0 0 15px #ff4aab,
+        0 0 18px #ff4aab,
+        0 0 20px #ff4aab,
+        0 0 22px #ff4aab,
+        0 0 25px #ff4aab;
+}
+
+/*Footer*/
+
+footer {
+    margin-top: 30px;
+    background-color: #210736;
+    overflow: hidden;
+}
+
+.contenedor-footer {
+    width: 90%;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.contenedor-redes {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contenedor-redes-titulo {
+    font-family: 'Press Start 2P', cursive;
+    margin-top: 30px;
+    color: #ff4aab;
+    text-align: center;
+}
+
+.contenedor-logos {
+    display: flex;
+    justify-content: center;
+}
+
+.logos {
+    margin: 30px 10px;
+    width: 50px;
+}
+
+hr {
+    background-color: #5654d3;
+    height: 1px;
+    width: 90%;
+    border: none;
+    margin: 0 auto;
+}
+
+.contenedor-derechos {
+    display: flex;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.contenedor-img-derechos {
+    width: 20%;
+}
+
+.contenedor-parrafo-derechos {
+    width: 80%;
+}
+
+.img-footer {
+    width: 100%;
+}
+
+.p-footer {
+    font-family: 'Bebas Neue', sans-serif;
+    color: #ff4aab;
+    margin: 5px;
+    font-size: 1em;
+}
+
+
+/*----------Animaciones----------*/
+
+
+@keyframes flashingTitulo {
+    0% {
+        color: #5654d3;
+    }
+
+    50% {
+        color: #5654d3;
+    }
+
+    75% {
+        color: #ff4aab;
+    }
+
+    100% {
+        color: #ff4aab;
+    }
+}
+
+
+/*Responsive Desing*/
+
+
+@media(max-width: 1200px){
+
+}
+
+@media (max-width:820px) {
+    .contenedor-navBar {
+        flex-direction: column;
+    }
+
+    .contenedor-links {
+        width: 40%;
+    }
+
+    .contenedor-img {
+        width: 20%;
+    }
+
+    .contenedor-registro {
+        width: 40%;
+    }
+
+    .subtitulo-contenedores {
+        text-align: center;
+        margin: 5px auto;
+        padding: 30px;
+    }
+}
+
+
+@media (max-width:576px) {
+    .contenedor-navBar {
+        display: none;
+    }
+
+    .navbar-responsive {
+        display: flex;
+        align-items: center;
+        z-index: 10;
+    }
+
+    .menu-responsive {
+        width: 30px;
+        margin-top: 20px;
+        margin-left: 10px;
+        top: 3px;
+
+    }
+
+    .foto-menu {
+        width: 100%;
+        cursor: pointer;
+
+    }
+
+    .titulo-principal {
+        font-size: 2em;
+    }
+
+    .titulo-catalogo {
+        font-size: 1.8em;
+    }
+
+    .subtitulo-contenedores {
+        text-align: center;
+        margin: 0 auto;
+        font-size: 1.7em;
+    }
+
+    .contenedor-img-responsive {
+        width: 200px;
+        margin: auto;
+    }
+
+    .contenedor-img-responsive .logo {
+        width: 100%;
+    }
+
+    .lateral-menu {
+        position: absolute;
+        background-color: #272736;
+        height: 500px;
+        left: -200px;
+        transition: left 2s ease;
+        z-index: 10;
+    }
+
+    .lateral-menu:hover {
+        opacity: 1;
+    }
+
+    .contenedor-links {
+        flex-direction: column;
+        height: fit-content;
+        width: 100%;
+    }
+
+    .contenedor-links-ul-li-a {
+        display: block;
+    }
+
+    .p-footer {
+        font-size: 0.8em;
+        overflow: hidden;
+    }
+
+    .contenido-general {
+        margin: 50px 0;
+    }
+
+    .contenido-catalogo {
+        align-items: center;
+    }
+
+    .contenedor-compra {
+        width: 300px;
+    }
+
+    .contenedor-estrenos,
+    .contenedor-recomendados,
+    .contenedor-ofertas {
+        justify-content: center;
+    }
+
+    .contenedor-img-derechos {
+        width: 30%;
+    }
+
+    .contenedor-parrafo-derechos {
+        width: 70%;
+    }
+}
